@@ -7,7 +7,7 @@ import scala.annotation.unused
 
 @unused
 class Main extends JavaPlugin {
-  override def onEnable(): () = {
+  override def onEnable(): Unit = {
     getPluginManager.registerEvents(MyEventListener, this)
   }
 }

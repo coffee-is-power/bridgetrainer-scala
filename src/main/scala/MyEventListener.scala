@@ -8,7 +8,7 @@ import scala.annotation.unused
 object MyEventListener extends Listener {
   @unused
   @EventHandler
-  def on_player_join(join_event: PlayerJoinEvent): () = {
+  def on_player_join(join_event: PlayerJoinEvent): Unit = {
     join_event.setJoinMessage("Bem vindo ao nosso servidor de ponte!")
   }
 }
